@@ -1,0 +1,435 @@
+
+
+html {
+    box-sizing:border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+      box-sizing: inherit;
+      
+  }
+
+body {
+    font-family: sans-serif var(--sans);
+    padding: 0;
+    margin: 0;
+    background-color: #2A0134;
+    color: whitesmoke;
+    font-size: 1rem;
+  
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  
+
+  .gradient {
+    background: linear-gradient(25deg, rgba(3,0,56,1) 0%, rgba(110,9,121,1) 44%, rgba(0,212,255,1) 100%);
+    background-color: purple;
+    height: 3.5px;
+    width: 100%;
+    max-width: none;
+  }
+
+  a {
+    color: aqua;
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color:aqua ;
+  }
+
+  .intro a:hover {
+   color: magenta
+  }
+
+  .intro {
+    padding: 4rem 1rem 0rem 1rem;
+    /* this limits total page max width so maybe delete? must fix the page width on the project two titles to prple though */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+  
+
+  }
+
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .intro .name {
+    font-family: monospace;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+  .name span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    color: aqua;
+    display: block;
+
+  }
+
+
+
+  nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80%;
+    padding: 3rem 1rem;
+    background: linear-gradient(25deg, rgba(85,3,112,0.9923319669664741) 11%, rgba(0,212,255,1) 21%, rgba(110,9,121,1) 39%, rgba(29,158,219,1) 63%, rgba(174,0,255,1) 85%);
+    
+  }
+
+ 
+
+  nav h1 a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    color: aqua;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav a:hover {
+    color: magenta;
+  }
+
+  nav [class*="fa-"] {
+    font-size: 170%;
+    
+  }
+
+  .intro h2{
+    color: aqua;
+  }
+
+  .button {
+    background-color: aqua;
+    padding: .5rem;
+    border-radius: 5px;
+    color: magenta;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .button:hover {
+    color: aqua;
+    background-color: magenta;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .5rem;
+    border-radius: 5px;
+  }
+
+  
+
+/* this is for the div class controlling the library background*/
+.library{ 
+  background: linear-gradient(109deg, rgba(0,212,255,1) 18%, rgba(85,3,112,0.9923319669664741) 46%);
+  padding: 4;
+}
+
+.projects {
+  padding: 4rem 1rem;
+
+}
+
+.projects h2 {
+  font-size: 3.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+  color: purple;
+  font-weight: bolder;
+ 
+}
+
+.projects h3 {
+  color: turquoise;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 3rem;
+  margin: .5rem 0 0 0;
+}
+
+.projects h4{
+  font-size: 2rem;
+  text-decoration: underline;
+  color: turquoise;
+  margin: 2rem 0 .4rem 0;
+
+padding:.1rem 0 .2rem 0;
+}
+/* projectOne title need to be a diffrent color to see when on a small screen */
+.projectOne h3, .projectOne h4, .projectOne a {
+  color: purple;
+}
+
+.projects a {
+  border: 3rem;
+  border-radius: 12px;
+  background-color: black;
+  margin: 1rem rem .5rem 3rem;
+  padding: 0 3.1rem 0 3.1rem;
+ text-decoration: none;
+ color: aqua;
+}
+
+.projects a:hover {
+  color: magenta;
+  background-color: aqua;
+}
+
+
+
+
+.blackBox {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  color: snow;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+  margin: .2rem 0 3rem 0;
+  display: flex;
+   flex-flow: row wrap;
+  background-color: black;
+ justify-content: space-evenly;
+ align-items: center;
+ gap: 1rem;
+ font-size: 1rem;
+ border-radius: 12px;
+
+}
+
+
+
+
+
+/*add margin .5 rem to top and bottom of project links*/
+
+.projects img {
+  flex-direction: row;
+  margin: 1.3rem 0rem 1rem 0;
+  border-radius: 1rem;
+  border-left: 1px solid aqua;
+  border-top: 1px solid aqua;
+  border-radius: 25px;
+  padding: 1rem
+}
+img {
+  width: 80%;
+}
+
+
+@media (min-width:550px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+  
+  .text {
+    order: 2;
+    text-align: right;
+  }
+  #projects ul {
+    justify-content: flex-end;
+  }
+  img {
+    order: 1;
+  }
+
+  .projectOne h3, .projectOne h4{
+    color: turquoise;
+  }
+
+  .projectTwo .text {
+    order: 1;
+    text-align: left;
+  }
+  .projectTwo img {
+    order: 2;
+    
+  }
+}
+
+  .contact {
+   color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 400px;
+   
+  }
+
+
+
+
+
+
+
+  footer ul {
+    padding: 0;
+    margin: 2rem 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+
+footer ul li {
+    font-size: 150%;
+    
+    color: aqua;
+    text-decoration: none;
+    display: block
+}
+
+/* background color for the contact section*/
+.contactColor{
+
+
+}
+
+.contact h2 {
+  color: turquoise;
+}
+
+footer {
+  
+    text-align: center;
+    font-size: 0.8rem;
+    color: purple;
+    margin:0;
+    padding: .3rem;  
+    list-style: none;
+    border: none;
+  
+    background: radial-gradient(circle, rgba(3,0,56,1) 0%, rgba(0,212,255,1) 8%, rgba(110,9,121,1) 35%, rgba(29,158,219,1) 69%, rgba(174,0,255,1) 89%) ;
+    
+}
+
+footer h2{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+footer a {
+    color: purple;
+    text-decoration: none;
+    display: block;
+}
+
+footer li {
+  color: purple;
+}
+
+.fa-solid .fa-envelope {
+  color: purple;
+}
+
+footer p {
+  color:black
+}
+
+footer a:hover {
+  color: aqua;
+}
+
+@media (min-width: 850px){
+  nav {
+     
+    margin: 0 auto;
+  }  
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+.aboutButton {
+background-color: aqua;
+    padding: .5rem;
+    border-radius: 5px;
+    color: purple;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutButton a:hover{
+  color:aqua;
+
+}
+
+.contact a:hover{
+  color: aqua;
+}
+
+.aboutTitles {
+  color: aqua;
+}
+
+.aboutTitle {
+  padding-bottom: 2rem;
+  font: 4rem;
+}
+
+.aboutUl {
+  list-style-type: none;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 12pt;
+}
+
+.aboutImg {
+  flex-direction: row;
+  margin: 1.3rem 0rem 1rem 0;
+  border-radius: 1rem;
+  border-left: 1px solid aqua;
+  border-top: 1px solid aqua;
+  border-radius: 25px;
+  padding: 1rem
+}
