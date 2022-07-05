@@ -285,6 +285,10 @@ img {
     order: 2;
     
   }
+    
+      .projectTwo h3, .projectTwo h4 {
+    color:purple;
+  }
 }
 
   .contact {
