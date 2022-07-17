@@ -139,6 +139,7 @@ body {
     color: magenta;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
   }
 
   .button:hover {
@@ -285,9 +286,9 @@ img {
     order: 2;
     
   }
-    
-      .projectTwo h3, .projectTwo h4 {
-    color:#AE00FF;
+
+  .projectTwo h3, .projectTwo h4 {
+    color:purple
   }
 }
 
@@ -437,3 +438,74 @@ background-color: aqua;
   border-radius: 25px;
   padding: 1rem
 }
+
+.projectsArch {
+  color: aqua;
+}
+
+.pageLogo {
+  color: aqua;
+}
+
+.fa-hat-wizard {
+  cursor: grab;
+  
+}
+
+.fa-hat-wizard:hover {
+  cursor: grab;
+  color: magenta;
+}
+
+.fa-hat-wizard:active {
+  cursor: grabbing;
+  color: magenta;
+}
+
+#libraryTitle {
+  color: aqua;
+ 
+}
+
+.proLibr {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color:aqua ; 
+  color: magenta;
+  font-size: 20px;    
+  padding: 5px 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+
+.prev {
+  margin-right: 15px;
+
+}
+
+.btn:hover {
+  color: aqua;
+  background-color: magenta;
+}
+
+.btn:disabled {
+  background-color:darkgray ;
+  cursor: not-allowed;
+}
+
